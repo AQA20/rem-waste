@@ -28,7 +28,7 @@ const Card = ({
     >
       <section>
         <span className="
-          bg-electric-blue rounded-[10px] p-2 absolute w-21 
+          bg-electric-blue rounded-[10px] p-2 absolute w-22 
           md:w-20 h-8 top-3 left-4 flex items-center justify-center
         "
         >
