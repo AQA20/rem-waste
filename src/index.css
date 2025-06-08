@@ -4,6 +4,7 @@
   --color-surface: oklch(0.141 0.005 285.823);
   --color-primary: oklch(0.541 0.281 293.009);
   --color-primary-foreground: oklch(0.141 0.005 285.823);
+  --color-foreground: oklch(0.985 0 0);
   --color-yellow-skip: #facc15;
   --color-primary-hover: #3200a3;
   --color-card: oklch(0.21 0.006 285.885);
@@ -15,14 +16,14 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: white;
+  color: var(--color-foreground);
 }
 
 html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: var(--color-surface) no-repeat center / cover;
+  background-color: var(--color-surface);
   min-height: 100%;
   margin: 0 auto;
 }
@@ -59,7 +60,6 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  color: #f1f5f9; /* soft white-ish for dark bg */
 }
 
 @media (max-width: 640px) {
