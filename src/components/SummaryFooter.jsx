@@ -10,7 +10,7 @@ const SummaryFooter = ({ price, period, size, show }) => {
       ${show ? 'translate-y-0 opacity-100 z-30' : 'translate-y-full opacity-0'}
     `}
     >
-      <section className="px-4 lg:px-[11%] xl:px-[18%] py-2">
+      <section className="px-4 mx-auto lg:max-w-[1280px] py-2">
         <section className="flex items-center justify-between flex-wrap lg:flex-nowrap">
           <section>
             <section className="flex items-center gap-2 mt-2">
