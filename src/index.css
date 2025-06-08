@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #4e0eff;
+  --color-secondary: #d100ff;
+  --color-electric-blue: #3b82f6;
+  --color-highlight-pink: #ec4899;
+  --color-deep-blue: #0f172a; 
+  --color-yellow-skip: #facc15;
+  --color-primary-hover: #3200a3;
+
+  --color-main-gradient: linear-gradient(135deg, #4e0eff, #d100ff);
+  --color-card-gradient: linear-gradient(135deg, #ff5f6d, #ffc371);
+  
+}
+
+.bg-main-gradient {
+  background-image: var(--color-main-gradient);
+}
+.bg-card-gradient {
+  background-image: var(--color-card-gradient);
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+}
+
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--color-main-gradient) no-repeat center / cover;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+
+body {
+  max-width: 1280px !important;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* ✅ Base Typography Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #f1f5f9; /* soft white-ish for dark bg */
+}
