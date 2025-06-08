@@ -12,7 +12,7 @@ const Button = ({ title, onClick, className, icon }) => {
       {title}
       {icon && (
         <span className="ml-2">
-          <img className="inline-block" src={icon} height={32} width={24} />
+          <img className="inline-block" src={icon} width={24} />
         </span>
       )}
     </button>
