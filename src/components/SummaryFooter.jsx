@@ -25,11 +25,11 @@ const SummaryFooter = ({ price, period, size, show }) => {
 
             <h2 className="text-primary-lighter">{price}</h2>
           </section>
-          <div>
-            <Button title="Back" className="mr-2" onClick={() => window.history.back()} />
+          <div className="w-full flex items-center md:block md:w-auto">
+            <Button title="Back" className="mr-2 w-full md:w-fit" onClick={() => window.history.back()} />
             <Button
               title="continue"
-              className="!bg-primary"
+              className="!bg-primary w-full md:w-fit"
               icon={Next}
             />
           </div>
