@@ -2,7 +2,9 @@
 
 @theme {
   --color-surface: oklch(0.141 0.005 285.823);
+  --color-surface-secondary: oklch(1 0 0 / 15%);
   --color-primary: oklch(0.541 0.281 293.009);
+  --color-primary-lighter: oklch(0.61 0.22 293);
   --color-primary-foreground: oklch(0.141 0.005 285.823);
   --color-foreground: oklch(0.985 0 0);
   --color-yellow-skip: #facc15;

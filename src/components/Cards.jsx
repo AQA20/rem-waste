@@ -8,7 +8,11 @@ const Cards = ({ skips, className }) => {
   const skip = skips.find((skip) => skip.id === skipId)
   return (
     <section
-      className={clsx('flex items-center flex-wrap gap-4', className, { 'pb-80 md:pb-44': Boolean(skip) })}
+      className={clsx(
+        'bg-surface-secondary flex items-center justify-center flex-wrap gap-3 px-2 py-5 rounded-[12px]',
+        className,
+        { 'mb-70 md:mb-44': Boolean(skip) }
+      )}
     >
       {skips.map((skip) => (
         <Card

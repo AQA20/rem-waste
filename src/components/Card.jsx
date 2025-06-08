@@ -72,7 +72,7 @@ const Card = ({
       <section className="p-5">
         <h3>{title}</h3>
         <p>{subtitle}</p>
-        <h2 className="text-primary">{price}</h2>
+        <h2 className="text-primary-lighter">{price}</h2>
         <div className="flex justify-center mt-4">
           <Button
             className={clsx('w-full z-20', { '!bg-primary': isSelected })}
