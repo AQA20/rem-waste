@@ -6,7 +6,7 @@ const SummaryFooter = ({ price, period, size, show }) => {
     <section
       className={`
       bg-card-gradient w-full fixed left-0 right-0 bottom-0
-      transition-all duration-500 ease-out
+      transition-all duration-500 ease-out z-30
       ${show ? 'opacity-100' : 'opacity-0'}
     `}
     >

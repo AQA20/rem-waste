@@ -19,7 +19,7 @@ const Card = ({
   return (
     <section
       className={clsx(
-        'rounded-[12px] bg-card-gradient w-100 relative cursor-pointer',
+        'rounded-[12px] bg-card-gradient w-100 relative cursor-pointer z-10',
         {
           'outline-[3px] outline-primary': isSelected,
         }
@@ -27,17 +27,21 @@ const Card = ({
       onClick={onSelect}
     >
       <section>
-        <span className="bg-electric-blue rounded-[10px] p-2 absolute w-20 h-8 top-3 left-4 flex items-center">
+        <span className="
+          bg-electric-blue rounded-[10px] p-2 absolute w-21 
+          md:w-20 h-8 top-3 left-4 flex items-center justify-center
+        "
+        >
           {highlight}
         </span>
       </section>
       <img
         src={img}
         alt={imgAlt}
-        className="w-full h-[290px] object-cover rounded-t-[12px]"
+        className="w-full h-[290px] object-contain rounded-t-[12px]"
       />
       {!isAllowedOnTheRoad && (
-        <div className="absolute bottom-60 right-4">
+        <div className="absolute bottom-62 right-4">
           <RestrictionBadge
             icon={WarningIcon}
             title="Not allowed on the road"
@@ -46,7 +50,7 @@ const Card = ({
         </div>
       )}
       {!isSuitableForHeavyWaste && (
-        <div className="absolute  right-4">
+        <div className="absolute bottom-52 right-4">
           <RestrictionBadge
             icon={DangerIcon}
             title="Not Suitable For Heavy Waste"
@@ -60,7 +64,7 @@ const Card = ({
         <h2 className="text-primary">{price}</h2>
         <div className="flex justify-center mt-4">
           <Button
-            className={clsx('w-full', { 'bg-primary': isSelected })}
+            className={clsx('w-full z-20', { 'bg-primary': isSelected })}
             title={isSelected ? 'Selected' : 'Select This Skip'}
             onClick={onSelect}
           />

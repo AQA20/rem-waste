@@ -1,18 +1,16 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 @theme {
   --color-primary: #4e0eff;
   --color-secondary: #d100ff;
   --color-electric-blue: #3b82f6;
   --color-highlight-pink: #ec4899;
-  --color-deep-blue: #0f172a; 
+  --color-deep-blue: #0f172a;
   --color-yellow-skip: #facc15;
   --color-primary-hover: #3200a3;
 
   --color-main-gradient: linear-gradient(135deg, #4e0eff, #d100ff);
   --color-card-gradient: linear-gradient(135deg, #ff5f6d, #ffc371);
-  
 }
 
 .bg-main-gradient {
@@ -29,7 +27,6 @@
   color: white;
 }
 
-
 html {
   padding: 0;
   margin: 0;
@@ -38,7 +35,6 @@ html {
   min-height: 100%;
   margin: 0 auto;
 }
-
 
 body {
   max-width: 1280px !important;
@@ -73,4 +69,18 @@ p {
   line-height: 1.6;
   margin-bottom: 1rem;
   color: #f1f5f9; /* soft white-ish for dark bg */
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
 }

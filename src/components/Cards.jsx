@@ -1,12 +1,15 @@
 import Card from '@/components/Card'
 import { useState } from 'react'
 import SummaryFooter from '@/components/SummaryFooter'
+import clsx from 'clsx'
 
-const Cards = ({ skips }) => {
+const Cards = ({ skips, className }) => {
   const [skipId, setSkipId] = useState(null)
   const skip = skips.find((skip) => skip.id === skipId)
   return (
-    <section className="flex items-center flex-wrap gap-4 pb-80 md:pb-44">
+    <section
+      className={clsx('flex items-center flex-wrap gap-4 pb-80 md:pb-44', className)}
+    >
       {skips.map((skip) => (
         <Card
           key={skip.id}
@@ -24,6 +27,7 @@ const Cards = ({ skips }) => {
       ))}
 
       <SummaryFooter
+        className="mt-80 md:mt-44"
         price={`£${skip?.price_before_vat}`}
         period={`${skip?.hire_period_days} day hire period`}
         size={`${skip?.size} Yard Skip`}
