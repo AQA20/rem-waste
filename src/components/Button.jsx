@@ -5,7 +5,7 @@ const Button = ({ title, onClick, className, icon }) => {
     <button
       onClick={onClick}
       className={clsx(
-        'bg-deep-blue rounded-[20px] px-10 py-4 cursor-pointer hover:bg-primary',
+        'bg-primary-foreground rounded-[20px] px-10 py-4 cursor-pointer hover:bg-primary',
         className
       )}
     >

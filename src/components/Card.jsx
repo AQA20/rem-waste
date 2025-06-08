@@ -23,7 +23,7 @@ const Card = ({
   return (
     <section
       className={clsx(
-        'rounded-[12px] bg-card-gradient w-100 relative cursor-pointer z-10',
+        'rounded-[12px] bg-card w-100 relative cursor-pointer z-10',
         {
           'outline-[3px] outline-primary': isSelected,
         }
@@ -32,7 +32,7 @@ const Card = ({
     >
       <section>
         <span className="
-          bg-electric-blue rounded-[10px] p-2 absolute w-22 
+          bg-primary rounded-[10px] p-2 absolute w-22 
           md:w-20 h-8 top-3 left-4 flex items-center justify-center
         "
         >
@@ -75,7 +75,7 @@ const Card = ({
         <h2 className="text-primary">{price}</h2>
         <div className="flex justify-center mt-4">
           <Button
-            className={clsx('w-full z-20', { 'bg-primary': isSelected })}
+            className={clsx('w-full z-20', { '!bg-primary': isSelected })}
             title={isSelected ? 'Selected' : 'Select This Skip'}
             onClick={onSelect}
           />

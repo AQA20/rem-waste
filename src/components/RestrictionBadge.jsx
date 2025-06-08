@@ -4,7 +4,7 @@ const RestrictionBadge = ({ icon, title, className }) => {
   return (
     <div
       className={clsx(
-        'bg-black w-fit p-2 h-8 text-[12px] rounded-[10px]',
+        'bg-primary-foreground  w-fit p-2 h-8 text-[12px] rounded-[10px]',
         { className }
       )}
     >
