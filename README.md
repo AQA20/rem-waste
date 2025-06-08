@@ -50,10 +50,11 @@ environment variable, e.g., `VITE_API_URL=https://app.wewantwaste.co.uk/api/skip
 
 - 🧩 **Component-Based Architecture**  
   The app is split into **5 reusable components** for better maintainability, reusability, and scalability:
-  - `Button.jsx`  
-  - `Card.jsx`  
-  - `Cards.jsx`  
-  - `RestrictionBadge.jsx`  
-  - `SummaryFooter.jsx`  
+  - `Button.jsx`
+  - `Card.jsx`
+  - `Cards.jsx`
+  - `RestrictionBadge.jsx`
+  - `SummaryFooter.jsx`
+  - `LoadingIndicator.jsx`
 
   Components were designed to be as **agnostic and modular** as possible.

@@ -1,7 +1,7 @@
 import Cards from '@/components/Cards'
 import { useEffect, useState } from 'react'
 import { fetchSkips } from '@/lib/skips'
-import LoadingGif from '@/assets/loading.gif'
+import LoadingIndicator from '@/components/LoadingIndicator'
 
 function App() {
   const [skips, setSkips] = useState([])
@@ -23,12 +23,7 @@ function App() {
     fetchData()
   }, [])
 
-  if (loading)
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <img src={LoadingGif} alt="loading-indicator" />
-      </div>
-    )
+  if (loading) return <LoadingIndicator />
   if (error) return <p className="text-center text-red-500">{error}</p>
 
   return (

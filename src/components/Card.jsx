@@ -3,6 +3,8 @@ import clsx from 'clsx'
 import RestrictionBadge from '@/components/RestrictionBadge'
 import WarningIcon from '@/assets/warning.png'
 import DangerIcon from '@/assets/danger.png'
+import { useState } from 'react'
+import LoadingIndicator from '@/components/LoadingIndicator'
 
 const Card = ({
   highlight,
@@ -16,6 +18,8 @@ const Card = ({
   isAllowedOnTheRoad,
   isSuitableForHeavyWaste,
 }) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   return (
     <section
       className={clsx(
@@ -35,11 +39,18 @@ const Card = ({
           {highlight}
         </span>
       </section>
-      <img
-        src={img}
-        alt={imgAlt}
-        className="w-full h-[290px] object-contain rounded-t-[12px]"
-      />
+      <div className="w-full h-[290px]">
+        {!isImageLoaded && <LoadingIndicator />}
+        <img
+          src={img}
+          alt={imgAlt}
+          onLoad={() => setIsImageLoaded(true)}
+          className={clsx(
+            'w-full h-[290px] object-contain rounded-t-[12px]',
+            { hidden: !isImageLoaded }
+          )}
+        />
+      </div>
       {!isAllowedOnTheRoad && (
         <div className="absolute bottom-62 right-4">
           <RestrictionBadge

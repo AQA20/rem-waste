@@ -10,7 +10,7 @@ const SummaryFooter = ({ price, period, size, show }) => {
       ${show ? 'opacity-100 z-30' : 'opacity-0'}
     `}
     >
-      <section className="px-4 lg:px-[11%] py-3">
+      <section className="px-4 lg:px-[11%] xl:px-[18%] py-3">
         <section className="flex items-center justify-between flex-wrap lg:flex-nowrap">
           <section>
             <section className="flex items-center gap-2">
