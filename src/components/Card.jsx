@@ -39,7 +39,7 @@ const Card = ({
           {highlight}
         </span>
       </section>
-      <div className="w-full h-[290px]">
+      <div className="w-full h-[290px] flex justify-center items-center">
         {!isImageLoaded && <LoadingIndicator />}
         <img
           src={img}
