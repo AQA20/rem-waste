@@ -32,7 +32,7 @@ function App() {
         <h2>Choose Your Skip Size</h2>
         <p>Select the skip size that best suits your needs</p>
         <p className="text-primary">
-          <a href='https://58qzk9-5173.csb.app/' target='_blank'>
+          <a href='https://h6sq9j-5173.csb.app/' target='_blank'>
             CHECK V2
           </a>
         </p>
