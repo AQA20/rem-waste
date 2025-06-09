@@ -28,14 +28,16 @@ function App() {
 
   return (
     <main>
-      <section className="mb-8 text-center">
+      <nav className="bg-primary h-[56px] fixed top-0 right-0 left-0 py-2 z-60">
+        <h3 className="text-center underline">
+          <a className='px-4 text-wrap' href="https://58qzk9-5173.csb.app/" target="_blank">
+            View Version 2.0 (an alternate version of this task — not part of the main page content)
+          </a>
+        </h3>
+      </nav>
+      <section className="mb-8 text-center mt-14">
         <h2>Choose Your Skip Size</h2>
         <p>Select the skip size that best suits your needs</p>
-        <p className="text-primary">
-          <a href='https://h6sq9j-5173.csb.app/' target='_blank'>
-            CHECK V2
-          </a>
-        </p>
       </section>
       <Cards skips={skips} />
     </main>
