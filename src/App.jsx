@@ -30,7 +30,7 @@ function App() {
     <main>
       <nav className="bg-primary h-[56px] fixed top-0 right-0 left-0 py-2 z-60">
         <h3 className="text-center underline">
-          <a className='px-4 text-wrap' href="https://58qzk9-5173.csb.app/" target="_blank">
+          <a className='px-4 text-wrap' href="https://rem-waste-skips.vercel.app/" target="_blank">
             View Version 2.0 (an alternate version of this task — not part of the main page content)
           </a>
         </h3>
